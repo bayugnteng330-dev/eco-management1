@@ -1,0 +1,337 @@
+/* BACKGROUND */
+.stApp {
+    background: linear-gradient(135deg, #080D19, #101B2D);
+    color: #F8FAFC;
+}
+
+/* CONTENT */
+.block-container {
+    padding-top: 2rem;
+    max-width: 1450px;
+}
+
+/* SIDEBAR */
+[data-testid="stSidebar"] {
+    background: #101B2D;
+    border-right: 1px solid #10B981;
+}
+
+/* HEADINGS */
+h1 {
+    color: #34D399 !important;
+    font-weight: 800 !important;
+}
+
+h2, h3 {
+    color: #F1F5F9 !important;
+}
+
+/* STATISTICS CARD */
+div[data-testid="stMetric"] {
+    background: linear-gradient(145deg, #172B35, #111C2B);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    border-radius: 16px;
+    padding: 22px;
+    transition: 0.3s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-4px);
+    border-color: #34D399;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #34D399 !important;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.stButton > button {
+    background: linear-gradient(135deg, #059669, #10B981);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.stButton > button:hover {
+    background: #34D399;
+    color: #052E16;
+}
+
+/* INPUT */
+.stTextInput input,
+.stNumberInput input,
+.stTextArea textarea {
+    background: #172235 !important;
+    color: white !important;
+    border-radius: 10px !important;
+    border: 1px solid #334155 !important;
+}
+
+/* FORM */
+[data-testid="stForm"] {
+    background: #111C2B;
+    border: 1px solid #1F6B50;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+/* TABLE */
+[data-testid="stDataFrame"] {
+    border: 1px solid #334155;
+    border-radius: 12px;
+}
+
+/* DIVIDER */
+hr {
+    border-color: #1F6B50;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #10B981;
+    border-radius: 10px;
+}
+
+/* =================================
+   SIDEBAR MENU - EMERALD DESIGN
+================================= */
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: linear-gradient(
+        180deg,
+        #111C2D 0%,
+        #0D1929 100%
+    );
+    border-right: 1px solid rgba(16, 185, 129, 0.5);
+}
+
+/* Judul menu */
+[data-testid="stSidebar"] [data-testid="stRadio"] > label {
+    color: #34D399 !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Jarak antar menu */
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] {
+    gap: 9px;
+}
+
+/* Setiap pilihan menu */
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] label {
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(148, 163, 184, 0.10);
+    border-radius: 10px;
+    padding: 11px 13px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+/* Hover menu */
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] label:hover {
+    background: rgba(16, 185, 129, 0.12);
+    border-color: rgba(16, 185, 129, 0.5);
+    transform: translateX(4px);
+}
+
+/* Menu aktif */
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] label:has(input:checked) {
+    background: linear-gradient(
+        100deg,
+        rgba(5, 150, 105, 0.35),
+        rgba(16, 185, 129, 0.10)
+    );
+    border: 1px solid #10B981;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.12);
+}
+
+/* Warna teks menu */
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] label p {
+    color: #CBD5E1 !important;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+/* Teks menu aktif */
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] label:has(input:checked) p {
+    color: #34D399 !important;
+    font-weight: 700;
+}
+
+/* Radio button */
+[data-testid="stSidebar"] [data-testid="stRadio"] input {
+    accent-color: #10B981;
+}
+
+/* Garis pembatas sidebar */
+[data-testid="stSidebar"] hr {
+    border-color: rgba(148, 163, 184, 0.18);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* ECO MANAGEMENT - EMERALD COMMAND CENTER */
+
+.eco-header {
+    background: linear-gradient(120deg, #022c22, #064e3b, #052e2b);
+    border: 1px solid #10b981;
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 30px rgba(16, 185, 129, 0.12);
+}
+
+.eco-header h1 {
+    color: #6ee7b7 !important;
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    margin: 8px 0 !important;
+}
+
+.eco-header p {
+    color: #a7f3d0 !important;
+    margin: 0 !important;
+}
+
+.eco-label {
+    color: #34d399;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.eco-status {
+    color: #6ee7b7;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #059669;
+    border-radius: 30px;
+    padding: 9px 15px;
+    background: rgba(6, 78, 59, 0.5);
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #34d399;
+    border-radius: 50%;
+    margin-right: 7px;
+    box-shadow: 0 0 10px #34d399;
+}
+
+.eco-section-label {
+    color: #34d399;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 15px 0;
+}
+
+/* STATISTIC CARDS */
+
+[data-testid="stMetric"] {
+    background: linear-gradient(145deg, #102b25, #0b1f1b);
+    border: 1px solid #145c45;
+    border-radius: 14px;
+    padding: 20px;
+    min-height: 115px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+    transition: 0.25s ease;
+}
+
+[data-testid="stMetric"]:hover {
+    border-color: #10b981;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(16, 185, 129, 0.12);
+}
+
+[data-testid="stMetricLabel"] {
+    color: #a7f3d0 !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #6ee7b7 !important;
+    font-weight: 800 !important;
+}
+
+/* DASHBOARD CONTENT */
+
+[data-testid="stPlotlyChart"] {
+    background: #0b1f1b;
+    border: 1px solid #145c45;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+[data-testid="stDataFrame"] {
+    border: 1px solid #145c45;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* BUTTONS */
+
+.stButton > button,
+.stFormSubmitButton > button {
+    background: linear-gradient(120deg, #047857, #059669) !important;
+    color: white !important;
+    border: 1px solid #10b981 !important;
+    border-radius: 9px !important;
+    font-weight: 700 !important;
+    transition: 0.2s ease;
+}
+
+.stButton > button:hover,
+.stFormSubmitButton > button:hover {
+    background: #10b981 !important;
+    border-color: #6ee7b7 !important;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+}
+
+/* SIDEBAR */
+
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #071c17, #0b2920);
+    border-right: 1px solid #145c45;
+}
+
+[data-testid="stSidebar"] h2 {
+    color: #6ee7b7 !important;
+}
+
+/* INPUT */
+
+.stTextInput input,
+.stNumberInput input,
+.stTextArea textarea {
+    background: #102b25 !important;
+    color: #ecfdf5 !important;
+    border: 1px solid #23634c !important;
+    border-radius: 8px !important;
+}
+
+.stSelectbox [data-baseweb="select"] {
+    background: #102b25 !important;
+    border-radius: 8px !important;
+}
+
+/* DIVIDER */
+
+hr {
+    border-color: #145c45 !important;
+}
